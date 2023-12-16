@@ -125,7 +125,7 @@ export default {
         this.description.isValid = false;
         this.formIsValid = false;
       }
-      if (!this.rate.val || this.rate.value < 0) {
+      if (!this.rate.val || this.rate.val < 0) {
         this.rate.isValid = false;
         this.formIsValid = false;
       }
@@ -140,6 +140,7 @@ export default {
       if (!this.formIsValid) {
         return;
       }
+
       const formData = {
         first: this.firstName.val,
         last: this.lastName.val,
